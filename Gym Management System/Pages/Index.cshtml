@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Gym</h1>
+ </div>
+
+
+<ul>
+    @foreach (var record in Model.records)
+    {
+        <li>@record.name</li>
+    }
+</ul>
