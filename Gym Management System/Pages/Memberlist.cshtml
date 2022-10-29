@@ -1,0 +1,11 @@
+﻿@page
+@model Gym_Management_System.Pages.MemberlistModel
+@{
+}
+
+<ul>
+    @foreach(var gym in Model.Gym)
+    {
+        <li>@gym.name</li>
+    }
+</ul>
